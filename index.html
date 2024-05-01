@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Hours Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Teaching Hours Calculator</h1>
+        <form id="hoursCalc">
+            <label for="hours">Hours Purchased:</label>
+            <input type="number" id="hours" name="hours" required>
+
+            <label for="level">Select Level:</label>
+            <select id="level" name="level">
+                <option value="a1">A1 (Purple)</option>
+                <option value="a2">A2 (Red)</option>
+                <option value="b1">B1 (Blue)</option>
+                <option value="b1+">B1+ (Green)</option>
+                <option value="b2">B2 (Orange)</option>
+                <option value="c1">C1 (Teal)</option>
+            </select>
+
+            <button type="button" onclick="calculateHours()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
